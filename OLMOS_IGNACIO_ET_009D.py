@@ -33,8 +33,6 @@ inscripciones = {
     'F006': [18990, 15]
 }
 
-
-
 #Funciones
 def Bievenida():
     print('Bienvenido al sistema de gestión de cupos de FitPass')
@@ -49,14 +47,13 @@ def LeerOpcion():
     print('5. Eliminar plan.')
     print('6. Salir.')
 
+    opcion = input('Ingrese la opción deseada: ')
+    
 def cupos_Tipo(tipo):
-    opcion = input()
-    tipo == planes['F001']
     if opcion == 1:
         print('Los planes disponibles son: ', planes)
 
 def Salir():
-    opcion = input()
     if opcion == 6:
         print('Programa finalizado.')
         sys.exit(0)
@@ -64,5 +61,3 @@ def Salir():
 def busqueda_precio(p_min, p_max):
     p_min >= 0
     p_max <= 200000
-
-def buscar_codigo(codigo):
